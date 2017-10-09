@@ -2,6 +2,7 @@
 <html lang="en">
 
 	<head>
+		
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,17 +16,14 @@
 
 		<style>
 			body {
-				padding-top: 70px;
+				padding-top: 5%;/*  70px; */
 			}
 		</style>
-		<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-	</head>
 
+	</head>
 	
 	<body>
+
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
 				<div class="navbar-header">
@@ -48,7 +46,7 @@
 					</ul>
 
 					<button class="btn btn-primary navbar-btn navbar-right">Tweet</button>
-	                <img src="images\becfavicon.ico" alt="Bec Braughton" class="img-circle navbar-right"
+	                <img src="images\becfavicon.ico" height='50px' alt="Bec Braughton" class="img-circle navbar-right"
 						style="padding: 5px;">
 					<form class="navbar-form navbar-right">
 						<div class="form-group">
@@ -86,7 +84,7 @@
 				<div class="col-xs-10 col-sm-5 col-md-6">
 					<div class="panel panel-default">
 						<div class="panel-heading">
-							<h3 class="panel-title text-center">Compose new Tweet</h3>
+							<h3 class="panel-title text-center">Compose New Tweet</h3>
 						</div>
 						<div class="panel-body">
 							<textarea name="" id="" rows="3" class="form-control"></textarea>
@@ -105,7 +103,7 @@
 					</div>
 					<ul class="media-list list-group">
 						<li class="list-group-item">
-							Tweets • Tweets & Replies • Media
+							Tweets • Tweets &amp; Replies • Media
 						</li>
 						<li class="list-group-item">
 							<div class="media">
@@ -120,10 +118,10 @@
 									Hello World! #otcwebdevs
 									<br><br>
 									<div>
-										<i class="fa fa-fw fa-comment-o"></i> 7
-										<i class="fa fa-fw fa-retweet btn-inc"></i> 12
-										<i class="fa fa-fw fa-heart btn-inc"></i> 83
-										<i class="fa fa-fw fa-envelope-o"></i>
+										<i class="fa fa-fw fa-comment-o"></i><span> 7   </span>
+										<i class="fa fa-fw fa-retweet btn-inc"></i><span> 0   </span>
+										<i class="fa fa-fw fa-heart btn-inc"></i><span> 0   </span>
+										<i class="fa fa-fw fa-envelope-o"></i><span> 9   </span>
 									</div>
 								</div>
 							</div>
@@ -191,9 +189,10 @@
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-			crossorigin="anonymous"></script>
+		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="js/like.js"></script>
+
 	</body>
 
 </html>
