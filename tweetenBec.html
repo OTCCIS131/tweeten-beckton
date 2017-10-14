@@ -87,45 +87,52 @@
 							<h3 class="panel-title text-center">Compose New Tweet</h3>
 						</div>
 						<div class="panel-body">
-							<textarea name="" id="" rows="3" class="form-control"></textarea>
-							<br>
-							<button class="btn btn-info">
-								<i class="fa fa-fw fa-image"></i>
-							</button>
-							<button class="btn btn-info">
-								<i class="fa fa-fw fa-map-pin"></i>
-							</button>
-							<div class="pull-right">
-								140&nbsp;
-								<button class="btn btn-primary">Tweet</button>
-							</div>
+							<form class="tweet-form">
+								<textarea name="" maxlength="140" id="text-area" rows="3" class="form-control char-area"></textarea>
+								<br>
+								<button class="btn btn-info">
+									<i class="fa fa-fw fa-image"></i>
+								</button>
+								<button class="btn btn-info">
+									<i class="fa fa-fw fa-map-pin"></i>
+								</button>
+								<div class="pull-right">
+									<span class="char-count">140&nbsp;</span>
+									<button class="btn btn-primary">Tweet</button>
+								</div>
+							</form>
 						</div>
 					</div>
 					<ul class="media-list list-group">
 						<li class="list-group-item">
 							Tweets • Tweets &amp; Replies • Media
 						</li>
-						<li class="list-group-item">
-							<div class="media">
-								<div class="media-left">
-	                                <img class="media-object img-circle" src="images\becfavicon.ico"alt="Bec Braughton">
-								</div>
-								<div class="media-body">
-									<h4 class="media-heading">
-										Bec Braughton
-										<small class="text-muted">@beckton • Sep 25</small>
-									</h4>
-									Hello World! #otcwebdevs
-									<br><br>
-									<div>
-										<i class="fa fa-fw fa-comment-o"></i><span> 7   </span>
-										<i class="fa fa-fw fa-retweet btn-inc"></i><span> 0   </span>
-										<i class="fa fa-fw fa-heart btn-inc"></i><span> 0   </span>
-										<i class="fa fa-fw fa-envelope-o"></i><span> 9   </span>
+						<div class="save-tweet">
+							<!-- the void -->
+						</div>
+						<form class="tweet-form">
+					<!-- --><li class="list-group-item" id="clone-tweet">
+								<div class="media">
+									<div class="media-left">
+										<img class="media-object img-circle" src="images\becfavicon.ico"alt="Bec Braughton">
+									</div>
+									<div class="media-body">
+										<h4 class="media-heading">
+											Bec Braughton
+											<small class="text-muted"><span id="handle">@beckton</span> • <span id="date-time-stamp">11:37 Nov 7, 2016</span></small>
+										</h4>
+										<span id="message-body">Hello World! #otcwebdevs</span>
+										<br><br>
+										<div>
+											<i class="fa fa-fw fa-comment-o"></i><span> 7   </span>
+											<i class="fa fa-fw fa-retweet btn-inc"></i><span> 0   </span>
+											<i class="fa fa-fw fa-heart btn-inc"></i><span> 0   </span>
+											<i class="fa fa-fw fa-envelope-o"></i><span> 9   </span>
+										</div>
 									</div>
 								</div>
-							</div>
-						</li>
+					<!-- --></li>
+						</form>
 					</ul>
 				</div>
 				<div class="col-xs-1 col-sm-2 col-md-3">
@@ -134,7 +141,7 @@
 							<h3 class="panel-title">Your Tweet Activity</h3>
 						</div>
 						<div class="panel-body">
-							You've tweeted once. Now go forth and tweet again.
+							<span id="activity-message">You've tweeted once. Now go forth and tweet again.</span>
 						</div>
 					</div>
 
@@ -189,10 +196,17 @@
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 		<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+		<!-- Failed attempt at getting a time stamp when a new tweet is made 
+			<script>document.getElementByID("date-time-stamp").innerHTML = Date();</script>
+		-->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 		<script src="js/like.js"></script>
 
+
+
+		
 	</body>
 
 </html>
